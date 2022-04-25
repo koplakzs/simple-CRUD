@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: "Patrick Hand", cursive, "Times New Roman", Times, serif;
+  font-size: 28pt;
+  width: 90%;
+}
+.dark {
+  height: 25px;
+  width: 25px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 10%;
+  cursor: pointer;
+}
+/* Dark Mode */
+.darkmode {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+  border-radius: 20px;
+}
+.pdark {
+  color: #ff9100;
+}
+.buttondark {
+  background-color: #ff9100;
+  color: #000000;
+}
+.adddark {
+  border: 2px solid #ffffff;
+  color: #000000;
+}
+
+/* Inputan */
+.inputan {
+  text-align: center;
+  padding: 30px;
+}
+.inputan li {
+  list-style-type: none;
+  margin: 20px;
+}
+.inputan li button {
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 0;
+  background-color: #0098d4;
+  color: #ffffff;
+  font-size: 14pt;
+}
+.inputan li button:hover {
+  background-color: #0379a8;
+  color: #ffffff;
+}
+
+.inputan li input {
+  padding: 10px;
+  font-size: 18pt;
+  border-radius: 10px;
+  border-style: none;
+  width: 90%;
+}
+
+/* End Inputan */
+/* Task */
+.task {
+  text-align: center;
+  padding: 30px;
+  margin: auto;
+}
+.task li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.task li:nth-child(2) {
+  color: #0098d4;
+}
+/* Add */
+.task li .add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #0098d4;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 24pt;
+  margin: 0 0 30px;
+}
+.task li .add button {
+  width: 70px;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 0;
+  font-size: 10pt;
+  margin: 0 10px;
+}
+.task li .add .edit {
+  background-color: #ffffff;
+  color: #0098d4;
+  border: 2px solid #0098d4;
+}
+.task li .add .done,
+.task li .add .confirm {
+  background-color: #ffffff;
+  color: #009708;
+  border: 2px solid #009708;
+  display: inherit;
+}
+.task li .add .edit:hover {
+  background-color: #0098d4;
+  color: #ffffff;
+}
+.task li .add .done:hover,
+.task li .add .confirm:hover {
+  background-color: #009708;
+  color: #ffffff;
+}
+.task li .add .confirm {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .inputan li .input {
+    width: 50%;
+  }
+  .task {
+    width: 60%;
+  }
+}
